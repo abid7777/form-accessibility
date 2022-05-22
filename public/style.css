@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-group {
+    @apply md:mb-8;
+  }
+
+  .form-group-flex {
+    @apply flex justify-between gap-5;
+  }
+
+  .form-group-item {
+    @apply relative w-full mb-8 md:mb-0;
+  }
+
+  .form-control {
+    @apply relative w-full py-2 border-0 border-b border-b-gray-200 placeholder-transparent outline-none;
+  }
+
+  .form-control-label {
+    @apply absolute left-0 top-2 transition-transform duration-300 transform-gpu form-control-label-active origin-top-left pointer-events-none
+    peer-placeholder-shown:form-control-label-inactive peer-focus:form-control-label-active;
+  }
+
+  .form-control-label-active {
+    @apply -translate-y-5 scale-75 text-pink-600;
+  }
+
+  .form-control-label-inactive {
+    @apply text-gray-800 translate-x-0 translate-y-0 scale-100;
+  }
+
+  .form-control-border {
+    @apply w-full h-px scale-x-0 absolute left-0 bottom-0 bg-pink-600 transition-all duration-300 peer-focus:scale-x-100;
+  }
+
+  .form-control-after {
+    @apply content-none w-full h-20 bottom-0 border bg-slate-400;
+  }
+}
+
+html,
+body {
+  font-family: "Lato", Arial, Verdana, Helvetica, sans-serif;
+}
+
+::-moz-selection {
+  color: rgb(248, 250, 252);
+  background: rgb(31, 41, 55);
+}
+
+::selection {
+  color: rgb(248, 250, 252);
+  background: rgb(31, 41, 55);
+}

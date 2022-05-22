@@ -1,0 +1,42 @@
+{
+  "name": "form-accessibility",
+  "version": "1.0.0",
+  "description": "A quick demo on why Labels are important for form accessibility",
+  "main": "./public/index.html",
+  "scripts": {
+    "build": "rimraf ./build && snowpack build",
+    "dev": "snowpack dev",
+    "tailwind-watch": "tailwindcss -i ./src/style.css -o ./public/style.css --watch",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abid7777/form-accessibility.git"
+  },
+  "keywords": [
+    "form",
+    "accessibility",
+    "floating",
+    "labels"
+  ],
+  "author": "abid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abid7777/form-accessibility/issues"
+  },
+  "homepage": "https://github.com/abid7777/form-accessibility#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "@snowpack/plugin-optimize": "^0.2.13",
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.9",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "postcss": "^8.4.14",
+    "rimraf": "^3.0.2",
+    "snowpack": "^3.0.11",
+    "tailwindcss": "^3.0.24"
+  }
+}
