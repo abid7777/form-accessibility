@@ -2,11 +2,10 @@
   "name": "form-accessibility",
   "version": "1.0.0",
   "description": "A quick demo on why Labels are important for form accessibility",
-  "main": "./public/index.html",
+  "main": "./build/index.html",
   "scripts": {
     "build": "rimraf ./build && snowpack build",
     "dev": "snowpack dev",
-    "tailwind-watch": "tailwindcss -i ./src/style.css -o ./public/style.css --watch",
     "test": "exit 0"
   },
   "repository": {
