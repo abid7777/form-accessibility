@@ -1,66 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Floating Labels</title>
     <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" /> 
-</head>
-<body>
-    <main class="container mx-auto min-w-screen min-h-screen flex items-center justify-center">
-        <div class="form-wrapper p-8 border border-gray-200 w-5/6 md:w-3/5">
-            <form>
-                <div class="form-group">
-                    <h1 class="inline-block px-4 py-2 rounded-sm bg-gray-800 text-slate-50 text-lg select-none">FL</h1>
-                </div>
-                <div class="form-group mt-4 mb-4">
-                    <h3 class="text-lg select-none">Create your Account</h3>
-                </div>
-                <div class="form-group md:form-group-flex">
-                    <div class="form-group-item">
-                        <input type="text" name="first_name" class="form-control peer" placeholder="First Name" />
-                        <div class="form-control-border"></div>
-                        <label for="first name" class="form-control-label">First Name</label>
-                    </div>
-                    <div class="form-group-item">
-                        <input type="text" name="last_name" class="form-control peer" placeholder="Last Name" />
-                        <div class="form-control-border"></div>
-                        <label for="last name" class="form-control-label">Last Name</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-group-item">
-                        <input type="text" name="username" class="form-control peer" placeholder="Username" />
-                        <div class="form-control-border"></div>
-                        <label for="user name" class="form-control-label">Username</label>
-                    </div>
-                </div>
-                <div class="form-group md:form-group-flex">
-                    <div class="form-group-item">
-                        <input type="password" name="password" class="form-control peer" placeholder="Password" />
-                        <div class="form-control-border"></div>
-                        <label for="password" class="form-control-label">Password</label>
-                    </div>
-                    <div class="form-group-item">
-                        <input type="password" name="confirm_password" class="form-control peer" placeholder="Confirm Password" />
-                        <div class="form-control-border"></div>
-                        <label for="confirm password" class="form-control-label">Confirm Password</label>
-                    </div>
-                </div>
-                <div class="form-group mb-0">
-                    <button type="button" class="w-32 px-4 py-2 flex items-center justify-center gap-2 bg-gray-200 text-gray-600 opacity-90 cursor-not-allowed">
-                        <span>Sign up</span>
-                        <svg class="w-4 h-4" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 108.06">
-                            <path fill="rgba(75, 85, 99, 1)" d="M58.94,24.28a14.27,14.27,0,0,1,20.35-20l39.49,40.16a14.28,14.28,0,0,1,0,20L80.09,103.79a14.27,14.27,0,1,1-20.35-20L74.82,68.41l-60.67-.29a14.27,14.27,0,0,1,.24-28.54l59.85.28L58.94,24.28Z"/>
-                        </svg>
-                    </button>
-                </div>
-            </form>
-        </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main
+      class="min-w-screen container mx-auto flex min-h-screen items-center justify-center"
+    >
+      <div class="form-wrapper w-5/6 border border-gray-200 p-8 md:w-3/5">
+        <form>
+          <div class="form-group">
+            <h1
+              class="inline-block select-none rounded-sm bg-gray-800 px-4 py-2 text-lg text-slate-50"
+            >
+              FL
+            </h1>
+          </div>
+          <div class="form-group mt-4 mb-4">
+            <h3 class="select-none text-lg">Create your Account</h3>
+          </div>
+          <div class="form-group md:form-group-flex">
+            <div class="form-group-item">
+              <input
+                type="text"
+                name="first_name"
+                class="form-control peer"
+                placeholder="First Name"
+              />
+              <div class="form-control-border"></div>
+              <label for="first name" class="form-control-label"
+                >First Name</label
+              >
+            </div>
+            <div class="form-group-item">
+              <input
+                type="text"
+                name="last_name"
+                class="form-control peer"
+                placeholder="Last Name"
+              />
+              <div class="form-control-border"></div>
+              <label for="last name" class="form-control-label"
+                >Last Name</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-group-item">
+              <input
+                type="text"
+                name="username"
+                class="form-control peer"
+                placeholder="Username"
+              />
+              <div class="form-control-border"></div>
+              <label for="user name" class="form-control-label">Username</label>
+            </div>
+          </div>
+          <div class="form-group md:form-group-flex">
+            <div class="form-group-item">
+              <input
+                type="password"
+                name="password"
+                class="form-control peer"
+                placeholder="Password"
+              />
+              <div class="form-control-border"></div>
+              <label for="password" class="form-control-label">Password</label>
+            </div>
+            <div class="form-group-item">
+              <input
+                type="password"
+                name="confirm_password"
+                class="form-control peer"
+                placeholder="Confirm Password"
+              />
+              <div class="form-control-border"></div>
+              <label for="confirm password" class="form-control-label"
+                >Confirm Password</label
+              >
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <button
+              type="button"
+              class="flex w-32 cursor-not-allowed items-center justify-center gap-2 bg-gray-200 px-4 py-2 text-gray-600 opacity-90"
+            >
+              <span>Sign up</span>
+              <svg
+                class="h-4 w-4"
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 122.88 108.06"
+              >
+                <path
+                  fill="rgba(75, 85, 99, 1)"
+                  d="M58.94,24.28a14.27,14.27,0,0,1,20.35-20l39.49,40.16a14.28,14.28,0,0,1,0,20L80.09,103.79a14.27,14.27,0,1,1-20.35-20L74.82,68.41l-60.67-.29a14.27,14.27,0,0,1,.24-28.54l59.85.28L58.94,24.28Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>

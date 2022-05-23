@@ -4,7 +4,7 @@
   "description": "A quick demo on why Labels are important for form accessibility",
   "main": "./build/index.html",
   "scripts": {
-    "build": "rimraf ./build && snowpack build",
+    "build": "snowpack build",
     "dev": "snowpack dev",
     "test": "exit 0"
   },
@@ -34,7 +34,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "postcss": "^8.4.14",
-    "rimraf": "^3.0.2",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "snowpack": "^3.0.11",
     "tailwindcss": "^3.0.24"
   }
